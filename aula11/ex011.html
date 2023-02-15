@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual seu país!</title>
+</head>
+<body>
+    <h1>MEU PAÍS</h1>
+    Qual país você mora: <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Enviar" onclick="resposta()">
+    <div id="res">
+
+    </div>
+    <script>
+        function resposta() {
+            var txtpaís = window.document.querySelector('input#txtpaís')
+            var res = window.document.querySelector('div#res')
+            var país = String(txtpaís.value)
+            if (país == 'Brasil') {
+                res.innerHTML = (`<p>Você é brasileiro!</p><p>Seja bem vindo de volta!</p>`)
+            } else {
+                res.innerHTML = (`<p>Seu país é ${país}!</p><p>Seja bem vindo ao Brasil!</p>`)
+            }
+        }
+    </script>
+</body>
+</html>
