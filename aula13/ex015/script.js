@@ -1,0 +1,1 @@
+var imagem = 1
