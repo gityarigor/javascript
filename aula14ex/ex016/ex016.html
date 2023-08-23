@@ -13,21 +13,15 @@
     </header>
     <main>
         <section>
-            <p>Inicio:
-                <input type="number" name="numinicio" id="numinicio">
-            </p>
-            <p>
-                Fim
-                <input type="number" name="numfim" id="numfim">
-            </p>
-            <p>
-                Passo
-                <input type="number" name="numpasso" id="numpasso">
-            </p>
-            <p>
-                <input type="button" value="Contar" onclick="contar()">
-            </p>
-            <div id="msg">Impossível contar!</div>
+            <div id="dados">
+                <p>Inicio: <input type="number" name="inicio" id="txti"></p>
+                <p>Fim: <input type="number" name="fim" id="txtf"></p>
+                <p>Passo: <input type="number" name="passo" id="txtp"></p>
+                <p><input type="button" value="Contar" onclick="contar()"></p>
+            </div>
+            <div id="res">
+                Preparando contagem...
+            </div>
         </section>
     </main>
     <footer>
