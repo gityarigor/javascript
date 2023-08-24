@@ -17,7 +17,7 @@ function contar() {
             p = 1
         }
         if (i < f) {
-        for(let c = i; c <= f; c+= p) {
+        for(let c = i; c <= f; c += p) {
             res.innerHTML += `${c} `
         }
         
