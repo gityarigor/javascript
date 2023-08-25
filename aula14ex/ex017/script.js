@@ -1,16 +1,17 @@
-function gerartabuada() {
-    let numtab = document.getElementById(`numtab`)
-    let tabuada = document.getElementById(`tabuada`)
-    let p = 1
-    
-    if (numtab.value.length == 0 || numtab.value.length <= 0) {
-        tabuada.innerHTML = `IMPOSSIVEL FAZER A TABUADA!`
+function tabuada() {
+    let num = document.getElementById(`txtn`)
+    let tab = document.getElementById(`seltab`)
+    if (num.value.length == 0) {
+        window.alert(`Por favor digite um número!`)
     } else {
-        tabuada.innerHTML = `Tabuada: <br>`
-        let ntab = Number(numtab.value)
-        let p = Number(1)
-        if (p <= 10) {
-            tabuada.innerHTML += `${ntab} x ${p} = `
+        let n = Number(num.value)
+        
+        tab.innerHTML = ``
+        for (let c = 1; c <= 10; c++) {
+            let item = document.createElement(`option`)
+            item.text = `${n} X ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
         }
     }
 }
